@@ -1,0 +1,63 @@
+name: Wordle
+version: "1.0"
+about: Have dun playing Wordle in Rust!
+author: chengsx21
+
+args:
+    - input_word:
+        help: Input a specified word as answer
+        short: w
+        long: word
+        takes_value: true
+        value_name: WORD
+
+    - random_word:
+        help: Use a random word as answer
+        short: r
+        long: random
+
+    - difficult_word:
+        help: Strengthen the conditions to guess words
+        short: D
+        long: difficult
+
+    - statistical_word:
+        help: Calculate wins, loses and number of words used
+        short: t
+        long: stats
+
+    - rand_day:
+        help: Skip games
+        short: d
+        long: day
+        takes_value: true
+
+    - rand_seed:
+        help: Select a random game
+        short: s
+        long: seed
+        takes_value: true
+
+    - set_final_words:
+        help: Set specified final words
+        short: f
+        long: final-set
+        takes_value: true
+
+    - set_acceptable_words:
+        help: Set specified acceptable words
+        short: a
+        long: acceptable-set
+        takes_value: true
+
+    - load_state:
+        help: Load and save specified game states
+        short: S
+        long: state
+        takes_value: true
+        
+    - load_configuration:
+        help: Load specified game configuration
+        short: c
+        long: config
+        takes_value: true
